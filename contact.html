@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html class="">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Petal&Parcel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body class="h-full text-base-content bg-gray-900">
+  <!-- Header -->
+  <header id="header" class="fixed top-0 left-0 right-0 bg-gray-900 shadow-md px-4 py-3 z-50 flex items-center justify-between">
+    <div class="flex items-center">
+      <h1 class="text-xl font-bold text-brand-purple font-libre-baskerville">Petal&Parcel</h1>
+    </div>
+    <!-- Desktop Navigation: Centered links, right-aligned button -->
+    <nav class="hidden md:flex flex-1 justify-center">
+      <ul class="flex space-x-8">
+        <li><a href="index.html" class="text-gray-300 hover:text-brand-purple transition-colors">Home</a></li>
+        <li><a href="gallery.html" class="text-gray-300 hover:text-brand-purple transition-colors">Gallery</a></li>
+        <li><a href="contact.html" class="text-gray-300 hover:text-brand-purple transition-colors">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hidden md:flex items-center ml-auto">
+      <a href="#" class="bg-brand-purple text-white px-4 py-2 rounded-lg font-medium hover:bg-brand-purple transition-colors ml-4">Order Now</a>
+    </div>
+    <!-- Mobile Menu Button -->
+    <button id="menu-toggle" class="text-gray-300 md:hidden">
+      <i class="fa-solid fa-bars text-xl"></i>
+    </button>
+  </header>
+
+  <main class="pt-20 pb-8 px-4">
+    <section>
+      <div class="container lg:max-w-7xl lg:mx-auto lg:px-6">
+        <h2 class="text-2xl font-bold text-white mb-1">Contact Us</h2>
+        <p class="text-gray-400 mb-4">Have a question or just want to say hello? Fill out the form below and we'll get back to you!</p>
+        <div class="bg-gray-800 rounded-2xl p-6 mb-6">
+          <h3 class="text-2xl font-bold text-white mb-2 font-libre-baskerville">Get In Touch</h3>
+          <form class="space-y-4">
+            <div>
+              <label class="block text-gray-200 mb-1" for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your Name" class="w-full rounded-lg bg-gray-700 text-white px-4 py-3 border border-gray-600 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple" />
+            </div>
+            <div>
+              <label class="block text-gray-200 mb-1" for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="your@email.com" class="w-full rounded-lg bg-gray-700 text-white px-4 py-3 border border-gray-600 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple" />
+            </div>
+            <div>
+              <label class="block text-gray-200 mb-1" for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message..." class="w-full rounded-lg bg-gray-700 text-white px-4 py-3 border border-gray-600 placeholder-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-purple"></textarea>
+            </div>
+            <button type="submit" class="w-full max-w-xs mx-auto block bg-brand-purple text-white font-bold py-3 rounded-lg mt-2 transition-colors hover:bg-brand-purple">Send Message</button>
+          </form>
+        </div>
+        <div class="text-center text-gray-400 text-base mb-4">
+          Delivery Hours: 7PM-MIDNIGHT<br>Serving Toronto &amp; GTA
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="bg-gray-800 px-4 py-8 mt-8">
+    <div class="mb-8">
+      <h3 class="text-xl font-bold text-white mb-2 font-libre-baskerville">Petal&Parcel</h3>
+      <p class="text-gray-400 text-sm">Delivering fresh flowers after dark across Toronto &amp; GTA</p>
+    </div>
+    <div class="grid grid-cols-2 gap-6 mb-8">
+      <div>
+        <h4 class="text-white font-semibold mb-3">Quick Links</h4>
+        <ul class="space-y-2 mb-6">
+          <li><span class="text-gray-400 text-sm cursor-pointer hover:text-brand-purple">Home</span></li>
+          <li><span class="text-gray-400 text-sm cursor-pointer hover:text-brand-purple">Gallery</span></li>
+          <li class="pb-2"><span class="text-gray-400 text-sm cursor-pointer hover:text-brand-purple">Contact</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-semibold mb-3">Contact</h4>
+        <ul class="space-y-2">
+          <li class="text-gray-400 text-sm">Toronto, ON</li>
+          <li class="text-gray-400 text-sm">7PM - Midnight</li>
+          <li class="text-brand-purple text-sm cursor-pointer">info@nightbloom.ca</li>
+        </ul>
+      </div>
+    </div>
+    <div class="flex items-center justify-between pt-6 border-t border-gray-700">
+      <p class="text-gray-400 text-sm">© 2025 Petal&Parcel</p>
+      <div class="flex space-x-4">
+        <i class="fa-brands fa-instagram text-gray-400 text-xl cursor-pointer hover:text-brand-purple"></i>
+        <i class="fa-brands fa-facebook text-gray-400 text-xl cursor-pointer hover:text-brand-purple"></i>
+        <i class="fa-brands fa-twitter text-gray-400 text-xl cursor-pointer hover:text-brand-purple"></i>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-gray-900 z-50 flex flex-col justify-between transition-transform duration-300 translate-x-full">
+    <div class="flex items-center justify-between px-6 pt-6 pb-2">
+      <span class="text-2xl font-bold text-brand-purple font-libre-baskerville">Petal&Parcel</span>
+      <button id="menu-close" class="text-gray-300 text-3xl focus:outline-none">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <nav class="flex-1 flex flex-col justify-center px-6 space-y-10">
+      <a href="index.html" class="text-3xl text-gray-300 font-medium hover:text-brand-purple transition-colors">Home</a>
+      <a href="gallery.html" class="text-3xl text-gray-300 font-medium hover:text-brand-purple transition-colors">Gallery</a>
+      <a href="contact.html" class="text-3xl text-gray-300 font-medium hover:text-brand-purple transition-colors">Contact</a>
+    </nav>
+    <div class="px-6 pb-8">
+      <div class="flex items-center space-x-3 text-gray-400">
+        <span class="text-lg">Follow us</span>
+        <i class="fa-brands fa-instagram text-2xl"></i>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const menuClose = document.getElementById('menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.remove('translate-x-full');
+    });
+    menuClose.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+    });
+  </script>
+</body>
+</html> 
